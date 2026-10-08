@@ -1,0 +1,19 @@
+{
+  "name": "@mondash/server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "node ../../node_modules/@typescript/native/bin/tsc --noEmit"
+  },
+  "dependencies": {
+    "@effect/platform-bun": "4.0.1",
+    "@emoji-mart/data": "^1.2.1",
+    "@modelcontextprotocol/client": "^2.0.0",
+    "@mondash/shared": "workspace:*",
+    "effect": "4.0.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "~6.0.3"
+  }
+}

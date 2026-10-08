@@ -1,0 +1,12 @@
+{
+  "name": "@mondash/desktop",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "node ../../node_modules/@typescript/native/bin/tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "~6.0.3"
+  }
+}

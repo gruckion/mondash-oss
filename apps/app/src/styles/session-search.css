@@ -1,0 +1,14 @@
+/* The icon, text field and clear action belong to one rounded search control.
+ * Let browser focus follow its descendants without adding a second tab stop. */
+[data-session-search] {
+  border-radius: inherit;
+}
+
+[data-session-search]:focus-within {
+  outline: 2px solid Highlight;
+  outline-offset: 2px;
+}
+
+[data-session-search]:focus-within input {
+  outline: none;
+}

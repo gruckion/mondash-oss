@@ -1,0 +1,6 @@
+[install]
+# React Native and Metro expect one flat node_modules at the root.
+linker = "hoisted"
+
+[test]
+preload = ["./scripts/test-preload.ts"]

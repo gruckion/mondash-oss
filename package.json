@@ -1,0 +1,32 @@
+{
+  "name": "mondash",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "bun apps/server/src/main.ts",
+    "build": "bun run --filter @mondash/app build:web && bun scripts/check-bundle-size.ts",
+    "test": "bun test",
+    "typecheck": "bun run --filter '*' typecheck",
+    "format": "prettier --write .",
+    "check": "prettier --check . && bun run typecheck && bun run --filter @mondash/app lint && bun test",
+    "prepare": "effect-tsgo patch --typescript --no-oxlint",
+    "setup": "bun apps/server/src/doctor.ts init",
+    "doctor": "bun apps/server/src/doctor.ts doctor",
+    "services": "bash scripts/macos-services.sh",
+    "build:browser-iroh": "bun scripts/build-browser-iroh.ts",
+    "build:desktop": "python3 scripts/build-desktop.py"
+  },
+  "devDependencies": {
+    "@effect/tsgo": "0.46.0",
+    "@typescript/native": "npm:typescript@7.0.2",
+    "prettier": "^3.9.9"
+  },
+  "engines": {
+    "bun": ">=1.4.2",
+    "node": ">=24.14.0"
+  }
+}

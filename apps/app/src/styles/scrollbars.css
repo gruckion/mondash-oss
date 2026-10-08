@@ -1,0 +1,56 @@
+/* A thin, quiet thumb on a transparent track.
+ * Apply to every scroll container, including sheets and Markdown code/tables.
+ * Expo's CSS transform emits styles only for web, leaving native indicators untouched. */
+:root {
+  --scrollbar-thumb: #e5e5e5;
+  --scrollbar-thumb-hover: #a1a1aa;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --scrollbar-thumb: #404040;
+    --scrollbar-thumb-hover: #737373;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) transparent;
+}
+
+/* Reserve the native scrollbar width even when a list fits without scrolling.
+ * Target scroll surfaces only: `stable` also affects overflow:hidden, so applying
+ * it universally would add unwanted gutters to clipped cards and modal shells. */
+[data-scroll-container] {
+  scrollbar-gutter: stable;
+}
+
+/* Older WebKit versions don't support the standard scrollbar properties. */
+@supports not (scrollbar-width: thin) {
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+  }
+}
+
+/* Let the system retain its accessible contrast and sizing in high-contrast mode. */
+@media (forced-colors: active) {
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: auto;
+  }
+}

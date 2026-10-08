@@ -1,0 +1,13 @@
+{
+  "$schema": "../../node_modules/@effect/tsgo/schema.json",
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "plugins": [{ "name": "@effect/language-service" }]
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["**/*.test.ts"]
+}

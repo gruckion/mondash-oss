@@ -1,0 +1,14 @@
+node_modules
+dist
+dist-ios
+apps/app/ios
+apps/app/android
+.cache
+.mcp-auth
+bun.lock
+*.md
+experiments
+.cocoindex_code
+.scratch
+
+apps/app/public/iroh/mondash_iroh*

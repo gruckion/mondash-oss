@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "directory": {
+    "me": "taylor@example.com",
+    "people": [
+      {
+        "name": "Taylor Reed",
+        "email": "taylor@example.com",
+        "slack": "UDEMO000001",
+        "github": "taylor-demo"
+      },
+      {
+        "name": "Morgan Park",
+        "email": "morgan@example.com",
+        "slack": "UDEMO000002",
+        "github": "morgan-demo"
+      },
+      {
+        "name": "Renée Frost",
+        "email": "renee@example.com",
+        "slack": "UDEMO000003",
+        "github": "renee-demo"
+      },
+      {
+        "name": "Casey Miller",
+        "email": "casey@example.com",
+        "slack": "UDEMO000004",
+        "github": "casey-demo"
+      },
+      {
+        "name": "Jordan Blake",
+        "email": "jordan@example.com",
+        "slack": "UDEMO000005",
+        "github": "jordan-demo"
+      },
+      {
+        "name": "Avery Brooks",
+        "email": "avery@example.com",
+        "slack": "UDEMO000006",
+        "github": "avery-demo"
+      },
+      {
+        "name": "Robin Stone",
+        "email": "robin@example.com",
+        "slack": "UDEMO000007",
+        "github": "robin-demo"
+      },
+      {
+        "name": "Jamie Hart",
+        "email": "jamie@example.com",
+        "slack": "UDEMO000008",
+        "github": "jamie-demo"
+      },
+      {
+        "name": "Nico Vale",
+        "email": "nico@example.com",
+        "slack": "UDEMO000009",
+        "github": "nico-demo"
+      },
+      {
+        "name": "Sam Wren",
+        "email": "sam@example.com",
+        "slack": "UDEMO000010",
+        "github": "sam-demo"
+      },
+      {
+        "name": "Cameron Bell",
+        "email": "cameron@example.com",
+        "slack": "UDEMO000011",
+        "github": "cameron-demo"
+      },
+      {
+        "name": "Rowan Silva",
+        "email": "rowan@example.com",
+        "slack": "UDEMO000012",
+        "github": "rowan-demo"
+      },
+      {
+        "name": "Alex Drew",
+        "email": "alex@example.com",
+        "slack": "UDEMO000013",
+        "github": "alex-demo"
+      },
+      {
+        "name": "Quinn Oak",
+        "email": "quinn@example.com",
+        "slack": "UDEMO000014",
+        "github": "quinn-demo"
+      }
+    ]
+  },
+  "workspace": {
+    "organizations": ["ExampleOrg"],
+    "reviewTeams": [
+      {
+        "organization": "ExampleOrg",
+        "slug": "devs"
+      }
+    ],
+    "ticketPrefixes": ["DEMO"],
+    "linearWorkspace": "example",
+    "directories": {
+      "ExampleOrg": "/Users/demo/projects/example",
+      "example": "/tmp/mondash-example-workspace"
+    }
+  },
+  "notion": {
+    "properties": {
+      "title": "Name",
+      "status": "Status",
+      "priority": "Priority",
+      "owner": "Assign",
+      "reviewer": "Reviewer",
+      "effort": "Effort",
+      "effortDays": "Effort (Days)",
+      "created": "Created",
+      "updated": "Last edited time"
+    },
+    "scoping": ["Scoping", "Scoping - Ready to review", "Reviewed", "Design", "Blocked"],
+    "open": ["Scoping", "Scoping - Ready to review", "Reviewed", "Design", "Blocked", "Todo", "In progress"],
+    "readyToReview": "Scoping - Ready to review",
+    "view": "https://app.notion.com/p/ec194a8d334559c19f1bc8ecca31a319?v=bc2120a354f1514e800bfec554c38479"
+  },
+  "runtime": {
+    "host": "127.0.0.1",
+    "port": 3456,
+    "terminalApp": "Terminal",
+    "newSessionDir": "/Users/demo/projects/example",
+    "expoGoUrl": "exp://192.0.2.10:8081",
+    "publicUrl": ""
+  },
+  "integrations": {
+    "github": true,
+    "linear": true,
+    "slack": true,
+    "notion": true,
+    "sessions": true,
+    "classification": true,
+    "notifications": true,
+    "tracing": true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "irohTag": "v1.1.0",
+  "gitCommit": "5e451092dba0c1a09ee83ff6e5be37b1152a5c58",
+  "url": "https://github.com/n0-computer/iroh-ffi/releases/download/v1.1.0/IrohLib.xcframework.zip",
+  "sha256": "ad46dadf09f9224157512992923562931ed60f252414230d50893a4d515c5776",
+  "deploymentTarget": "17.5",
+  "expo": "57.0.25",
+  "reactNative": "0.86.3",
+  "bindingSha256": "681abdbd903ad86848571dbfbbf5540733da541584edae6592e0cabef3c3b856"
+}

@@ -1,0 +1,22 @@
+node_modules/
+*.tsbuildinfo
+.DS_Store
+
+# Secrets and local state: env, MCP OAuth tokens, the dashboard's SQLite store
+.env*
+.mcp-auth/
+.cache/
+
+# Local tooling and throwaway prototypes
+/.cocoindex_code/
+/experiments/
+
+# Private local configuration
+mondash.local.json*
+apps/app/modules/mondash-iroh/ios/Vendor/
+apps/app/modules/mondash-iroh/ios/IrohLib.swift
+!.env.example
+
+# Generated browser Iroh bindings (built by scripts/build-browser-iroh.ts)
+apps/app/public/iroh/mondash_iroh*
+apps/app/iroh-wasm/target/
